@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Gerar PDF</title>
+</head>
+<body>
+    <header>
+        <h1>Pedido</h1>
+        <address>
+            <p>Jose Carlos Macoratti</p>
+            <p>Rua Projetada , 100 - Centro<br>São Paulo - 03254-850</p>
+            <p>Telefone - (011) 555-1234</p>
+        </address>
+        <span>
+            <img src="~/images/maco10.gif" />
+        </span>
+    </header>
+    <article>
+        <address>
+            <p>JcmSoft<br> a/c - Macoratti</p>
+        </address>
+        <table class="meta">
+            <tr>
+                <th><span>Pedido</span></th>
+                <td><span>000001</span></td>
+            </tr>
+            <tr>
+                <th><span>Data</span></th>
+                <td><span>10, de Fevereiro, 2018</span></td>
+            </tr>
+            <tr>
+                <th><span>Valor</span></th>
+                <td><span>R$ 600,00</span></td>
+            </tr>
+        </table>
+        <br />
+        <table class="Estoque" border="1">
+            <thead>
+                <tr>
+                    <th><span>Item</span></th>
+                    <th><span>Descrição</span></th>
+                    <th><span>Quantidade</span></th>
+                    <th><span>Preço</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>Super DVD .NET</span></td>
+                    <td><span>Recursos de aprendizagem para .NET</span></td>
+                    <td><span>4</span></td>
+                    <td><span>100.00</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <table class="Saldo">
+            <tr>
+                <th><span>Total</span></th>
+                <td><span>600.00</span></td>
+            </tr>
+            <tr>
+                <th><span>Pago</span></th>
+                <td><span>0.00</span></td>
+            </tr>
+            <tr>
+                <th><span>Saldo</span></th>
+                <td><span>600.00</span></td>
+            </tr>
+        </table>
+    </article>
+    <aside>
+        <h1><span>Notas Adicionais</span></h1>
+        <div>
+            <p>Macoratti .net - Quase tudo para .NET</p>
+        </div>
+    </aside>
+</body>
+</html>  
