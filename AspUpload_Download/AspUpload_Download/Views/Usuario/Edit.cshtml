@@ -1,0 +1,57 @@
+﻿@model AspUpload_Download.Models.Usuario
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Usuario</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Usuario" asp-action="UploadImagem" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="Nome" />
+                <label class="control-label">Foto</label><br />
+                <img src="@ViewBag.CaminhoImagem" alt="@Model.Nome" height="100" width="100" /><br />
+                @if (!string.IsNullOrEmpty(ViewBag.NomeArquivo))
+                {
+                    <a href="~/Usuario/Download?img=@ViewBag.NomeArquivo&usuarioId=@Model.Id">Download</a><br />
+                }
+                <input type="file" name="imagem_usuario" id="imagem_usuario" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar" class="btn btn-default" />
+            </div>
+        </form>
+        <hr />
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Senha" class="control-label"></label>
+                <input asp-for="Senha" class="form-control" />
+                <span asp-validation-for="Senha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
