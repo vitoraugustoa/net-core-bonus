@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspnAngular_Upload", "AspnAngular_Upload\AspnAngular_Upload.csproj", "{4BA30F15-61F4-44CD-9300-86F0FF7B6BDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BA30F15-61F4-44CD-9300-86F0FF7B6BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA30F15-61F4-44CD-9300-86F0FF7B6BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA30F15-61F4-44CD-9300-86F0FF7B6BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA30F15-61F4-44CD-9300-86F0FF7B6BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D49D6865-6F4E-40FF-93F4-F64059CD6C14}
+	EndGlobalSection
+EndGlobal

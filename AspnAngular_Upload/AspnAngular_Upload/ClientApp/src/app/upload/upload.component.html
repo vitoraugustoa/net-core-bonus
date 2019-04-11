@@ -1,0 +1,14 @@
+<h2>Macoratti .net</h2>
+<hr />
+<br />
+<h3>Upload de arquivos usando ASP.NET Core 2.1 e Angular</h3>
+<hr />
+<input #file type="file" multiple (change)="upload(file.files)" />
+<br />
+<span style="font-weight:bold;color:green;" *ngIf="progress > 0 && progress < 100">
+  {{progress}}%
+</span>
+<hr />
+<span style="font-weight:bold;color:green;" *ngIf="message">
+  {{message}}
+</span>
